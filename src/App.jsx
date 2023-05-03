@@ -5,14 +5,18 @@ function App() {
 
 	return (
 		<>
-			<div className="card flex gap-5">
-				<button className="w-[100px] border-2" onClick={() => setCount((count) => count + 1)}>
-					+
-				</button>
-				<button className="w-[100px] border-2" onClick={() => setCount((count) => count - 1)}>
-					-
-				</button>
-				<p>{count}</p>
+			<div className="flex flex-col justify-center items-center gap-5">
+				<div className="text-center">
+					<p>{count}</p>
+				</div>
+				<div className="card flex gap-5">
+					<button className="w-[100px] border-2" onClick={() => setCount((count) => count + 1)}>
+						+
+					</button>
+					<button className="w-[100px] border-2" onClick={() => setCount((count) => count - 1)}>
+						-
+					</button>
+				</div>
 			</div>
 		</>
 	);
